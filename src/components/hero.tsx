@@ -4,9 +4,7 @@ import { useGSAP } from '@gsap/react'
 import { heroVideo, smallHeroVideo } from '../utils'
 import { useEffect, useState } from 'react'
 
-type Props = {}
-
-const Hero = (props: Props) => {
+const Hero = () => {
   const [videoSrc, setVideoSrc] = useState(window.innerWidth < 760 ? smallHeroVideo : heroVideo)
   const handleVideoSrcSet= () => {
     if(window.innerWidth < 760) {
